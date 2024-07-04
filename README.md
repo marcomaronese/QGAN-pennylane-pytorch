@@ -1,8 +1,6 @@
 # QGAN-pennylane-pytorch
 
-Task definition:
-
-We have implemented a quantum GAN that reproduces elements of the
+I have implemented a quantum GAN that reproduces elements of the
 Bars and Stripes dataset. The Bars and Stripes dataset consists of
 rectangular images that contain only black or white pixels. Everything is fine
 image is "striped" (all pixels in the same row are of the
@@ -35,7 +33,7 @@ The code consists of a MAIN which
 
 Quantum Implementation Details:
 
-We implemented on pennylane, with pytorch interface,
+I implemented on pennylane, with pytorch interface,
 a qGAN as described in the paper
 
 https://www.nature.com/articles/s41534-019-0223-2
@@ -66,7 +64,7 @@ convergence of the quantum generator since the training requires a lot
 longer than the classic counterpart.
 This is due to the gradient calculation method it requires for each
 parameter the simulation of two circuits.
-We spoke to an internal IBM researcher who confirmed that
+I spoke to an internal IBM researcher who confirmed that
 with 4 qubits the convergence is reached on the order of 1000 epochs even if
 in his case the task was the reproduction of a multimodal distribution.
 The choice of our task was made to have a more direct vision of
